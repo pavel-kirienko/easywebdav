@@ -13,6 +13,8 @@ else:
     from http.client import responses as HTTP_CODES
     from urllib.parse import urlparse
 
+    basestring = str
+
 DOWNLOAD_CHUNK_SIZE_BYTES = 1 * 1024 * 1024
 
 class WebdavException(Exception):
